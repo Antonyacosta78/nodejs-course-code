@@ -1,0 +1,11 @@
+{
+  "name": "aula-8",
+  "version": "1.0.0",
+  "description": "CRUD de linha de comando",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}

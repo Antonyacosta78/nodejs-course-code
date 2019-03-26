@@ -1,0 +1,15 @@
+{
+  "name": "aula-6",
+  "version": "1.0.0",
+  "description": "Aula 6 - Loops, manipulando listas com for, forIn, forOf, map, filter e reduce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
