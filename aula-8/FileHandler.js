@@ -17,7 +17,7 @@ class FileHandler{
 
     async registerHero(hero){
         const filedata = await this.getFileData()
-        if(typeof hero.id == undefined){
+        if(typeof hero.id == "undefined"){
             hero.id = Date.now()
         } 
         filedata.push(hero)
@@ -40,11 +40,11 @@ class FileHandler{
                     ...updateData
                 }
                 await this.writeToFile(allData)
-                return this.list(heroid)
+                return await this.list(heroid)
             }
         }
 
-        return false; //if loops throught entire file not finding the hero, can`t be updated
+        throw Error(`No Hero with id ${heroid} found`); //if loops throught entire file not finding the hero, can`t be updated
 
     }
 
@@ -52,6 +52,9 @@ class FileHandler{
         const allData = await this.getFileData()
 
         const index = allData.map(e=>e.id).indexOf(heroid)
+        if(index == -1){
+            throw Error("There is no hero with that index")
+        }
 
         const removed = allData.splice(index, 1)
         
@@ -66,7 +69,7 @@ class FileHandler{
     
     async list(id = null){
         const rawdata = await this.getFileData()
-        if(id){
+        if(id !== null && typeof id !== "undefined"){
 
             for(let i in rawdata){
                 if(id === rawdata[i].id){

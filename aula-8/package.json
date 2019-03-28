@@ -4,8 +4,11 @@
   "description": "CRUD de linha de comando",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha -w"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
 }
