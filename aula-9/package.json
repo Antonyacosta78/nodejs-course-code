@@ -1,0 +1,16 @@
+{
+  "name": "aula-9",
+  "version": "1.0.0",
+  "description": "Docker, Strategy Pattern, Multi data sources",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -w",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".."
+  },
+  "author": "Antony Acosta",
+  "license": "ISC"
+}
