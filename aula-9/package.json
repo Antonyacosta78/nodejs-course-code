@@ -1,7 +1,7 @@
 {
   "name": "aula-9",
   "version": "1.0.0",
-  "description": "Docker, Strategy Pattern, Multi data sources",
+  "description": "Docker, Strategy Design Pattern, Multi data sources",
   "main": "index.js",
   "scripts": {
     "test": "mocha -w",
