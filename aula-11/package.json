@@ -1,0 +1,24 @@
+{
+  "name": "aula-10",
+  "version": "1.0.0",
+  "description": "Aula 10, Modulo 6, Uso de MongoDB (incluidos archivos de PostgreSQL) ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src/tests/*.js",
+    "test:watch": "mocha src/tests/*.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".."
+  },
+  "author": "Antony Acosta",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.9.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.2.12"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2"
+  }
+}

@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS HEROES;
+CREATE TABLE HEROES(
+    ID INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY NOT NULL,
+    name TEXT NOT NULL,
+    power TEXT NOT NULL
+)
+
+--create
+INSERT INTO HEROES (name, power) VALUES ('Flash', 'speed'), ('Aquaman', 'Water control'), ('Batman', 'Money')
+
+--read
+SELECT * FROM HEROES
+
+--update
+UPDATE HEROES SET k=v WHERE HEROES.ID = id
+
+--delete
+DELETE FROM HEROES WHERE HEROES.ID = id
