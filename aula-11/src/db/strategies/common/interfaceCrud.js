@@ -15,7 +15,7 @@ class ICrud{
         throw new Error("Not Implemented Feature")
     }
 
-    _connect(){
+    connect(){
         throw new Error("Not Implemented Feature")
     }
 

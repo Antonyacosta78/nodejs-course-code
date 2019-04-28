@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha src/tests/*.js",
-    "test:watch": "mocha src/tests/*.js -w"
+    "test:watch": "mocha src/tests/*.js -w",
+    "test:mongo": "mocha src/tests/mongoStrategy.test.js"
   },
   "repository": {
     "type": "git",
@@ -14,11 +15,12 @@
   "author": "Antony Acosta",
   "license": "ISC",
   "dependencies": {
+    "mongoose": "^5.5.2",
     "pg": "^7.9.0",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^5.2.12"
+    "sequelize": "^5.7.0"
   },
   "devDependencies": {
-    "mocha": "^6.0.2"
+    "mocha": "^6.1.4"
   }
 }

@@ -27,6 +27,10 @@ class ContextStrategy{
         return this._database.connect()
     }
 
+    _disconnect() {
+        return this._database.disconnect()
+    }
+
     isConnected(){
         return this._database.isConnected()
     }
