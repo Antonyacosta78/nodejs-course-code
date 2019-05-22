@@ -2,7 +2,7 @@ sudo docker ps
 
 //postgres start
 
-sudo docker run --name postgres -e POSTGRES_USER=antony -e POSTGRES_PASSWORD=mysecretpass -e POSTGRES_DB=heroes --publish --network postgresnet 5432:5432 -d postgres
+sudo docker run --name postgres -e POSTGRES_USER=antony -e POSTGRES_PASSWORD=mysecretpass -e POSTGRES_DB=heroes --publish 5432:5432  --network postgresnet -d postgres
 
 //adminer start
 
